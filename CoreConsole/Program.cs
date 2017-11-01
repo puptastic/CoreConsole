@@ -1,4 +1,5 @@
 ﻿using System;
+using CoreConsole.Entities;
 
 namespace CoreConsole
 {
@@ -6,7 +7,10 @@ namespace CoreConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Soldier a = new Soldier(110, 75);
+
+            Console.WriteLine("Hello World! The soldier has toughness of: " + a.Toughness.ToString());
+            Console.ReadLine();
         }
     }
 }

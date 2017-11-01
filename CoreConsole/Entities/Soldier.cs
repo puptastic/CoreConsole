@@ -14,7 +14,7 @@ namespace CoreConsole.Entities
         /// <summary>
         /// Base constructor
         /// </summary>
-        Soldier() {
+        public Soldier() {
             this.MaxMorale = 100;
             this.Morale = 100;
             this.MaxToughness = 50;
@@ -26,7 +26,7 @@ namespace CoreConsole.Entities
         /// </summary>
         /// <param name="newMaxMorale"></param>
         /// <param name="newMaxToughness"></param>
-        Soldier(int newMaxMorale, int newMaxToughness) {
+        public Soldier(int newMaxMorale, int newMaxToughness) {
             this.MaxToughness = newMaxMorale;
             this.Morale = newMaxMorale;
             this.MaxToughness = newMaxToughness;
@@ -40,7 +40,7 @@ namespace CoreConsole.Entities
         /// <param name="newMaxToughness"></param>
         /// <param name="newMorale"></param>
         /// <param name="newToughness"></param>
-        Soldier(int newMaxMorale, int newMaxToughness, int newMorale, int newToughness) {
+        public Soldier(int newMaxMorale, int newMaxToughness, int newMorale, int newToughness) {
             this.MaxMorale = newMaxMorale;
             this.Morale = newMorale;
             this.MaxToughness = newMaxToughness;
