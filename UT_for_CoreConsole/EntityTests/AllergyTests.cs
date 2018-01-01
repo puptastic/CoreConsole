@@ -12,5 +12,13 @@ namespace UT_for_CoreConsole {
 
             Assert.AreEqual("Strawberry", testee.AllergyName);
         } 
+
+        [TestMethod]
+        public void TestToStringOverride()
+        {
+            Allergy testee = new Allergy("Belinda");
+
+            Assert.AreEqual("Belinda", testee.ToString());
+        }
     }
 }

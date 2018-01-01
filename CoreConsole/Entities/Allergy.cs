@@ -12,5 +12,10 @@ namespace CoreConsole.Entities {
         public Allergy(string newAllergyName) {
             this.AllergyName = newAllergyName;
         }
+
+        public override string ToString()
+        {
+            return AllergyName;
+        }
     }
 }
